@@ -207,3 +207,46 @@ section {
     font-style: italic;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);    
 }
+
+/* FAQ Section */
+.faq {
+    background-color: #fff;
+    padding: 3rem 2rem;
+}
+
+.accordion .faq-item {
+    margin-bottom: 1rem;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.accordion-toggle {
+    width: 100%;
+    padding: 1rem;
+    background: #f5f5dc;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.accordion-toggle:hover {
+    background-color: #008000;
+    color: #fff;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  background: #fff;
+  padding: 0 1rem;
+}
+
+.accordion-content p {
+    margin: 0;
+    padding: 0.5rem 0;
+}
