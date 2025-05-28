@@ -71,3 +71,47 @@ a {
   background-color: #76b947;
   border-radius: 5px;
 }
+
+/* sections */
+section {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* hero section */
+.hero {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-content {
+  padding: 2rem;
+}
+
+#headline{
+    color:#008000;
+    font-weight: bolder;
+}
+
+#subtitle{
+    color: #000;
+    font-weight: bold;
+}
+
+.cta-btn {
+  display: inline-block;
+  background: #008000;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  margin-top: 1rem;
+  transition: background 0.3s ease;
+}
+
+.cta-btn:hover {
+  background: #1b5e20;
+  color: white;
+}
