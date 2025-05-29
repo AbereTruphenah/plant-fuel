@@ -153,8 +153,8 @@ section {
 
 .image-slideshow {
     position: relative; 
-    width: 300px; 
-    height: 200px; 
+    width: 500px; 
+    height: 300px; 
     overflow: hidden; 
 }
 
@@ -291,4 +291,11 @@ section {
 
 .form-message {
   margin-top: 1rem;
+}
+
+/* Footer section */
+.footer {
+  color: #000;
+  text-align: center;
+  padding: 1rem;
 }
