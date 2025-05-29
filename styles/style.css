@@ -250,3 +250,45 @@ section {
     margin: 0;
     padding: 0.5rem 0;
 }
+
+/* Newsletter */
+.newsletter {
+    background-color: #008000;
+    color: #fff;
+    padding: 3rem 2rem;
+}
+
+.newsletter h2{
+  color: #fff
+}
+
+#signup-form{
+  margin-top: 1rem;
+}
+
+#signup-form input {
+  padding: 0.75rem;
+  width: 60%;
+  max-width: 300px;
+  margin-right: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#signup-form button {
+  padding: 0.75rem 1.2rem;
+  background: #fff;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#signup-form button:hover {
+  background: #1b5e20;
+  color: #fff;
+}
+
+.form-message {
+  margin-top: 1rem;
+}
