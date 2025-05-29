@@ -312,6 +312,8 @@ section {
     top: 60px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.15);
     padding: 1rem;
+    width: 100%;
+    margin-top: 1rem;
   }
 
   .nav-links.active {
@@ -320,6 +322,11 @@ section {
 
   .menu-toggle {
     display: block;
+    background: url('menu-icon.svg') no-repeat center;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border: none;
   }
 
   .hero {
