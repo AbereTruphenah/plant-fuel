@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setInterval(showNextImage, delay);
 });
 
-// Accordion Functionality
+// Accordion functionality
 const toggles = document.querySelectorAll('.accordion-toggle');
 
 toggles.forEach(toggle => {
@@ -38,4 +38,20 @@ toggles.forEach(toggle => {
     content.style.maxHeight = content.style.maxHeight ? null : content.scrollHeight + 'px';
     toggle.classList.toggle('open');
   });
+});
+
+// Signup Form Validation
+document.querySelector('#signup-form').addEventListener('submit', (e) => {
+  e.preventDefault();
+  const email = e.target.querySelector('input[type="email"]');
+  const message = e.target.querySelector('.message');
+
+  if (!email.value.includes('@')) {
+    message.textContent = 'Please enter a valid email.';
+    message.style.color = 'red';
+  } else {
+    message.textContent = 'Thanks for signing up!';
+    message.style.color = 'black';
+    e.target.reset();
+  }
 });
