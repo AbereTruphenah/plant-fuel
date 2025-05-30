@@ -28,3 +28,14 @@ document.addEventListener('DOMContentLoaded', () => {
     // Start the slideshow
     setInterval(showNextImage, delay);
 });
+
+// Accordion Functionality
+const toggles = document.querySelectorAll('.accordion-toggle');
+
+toggles.forEach(toggle => {
+  toggle.addEventListener('click', () => {
+    const content = toggle.nextElementSibling;
+    content.style.maxHeight = content.style.maxHeight ? null : content.scrollHeight + 'px';
+    toggle.classList.toggle('open');
+  });
+});
