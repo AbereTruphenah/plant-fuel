@@ -307,16 +307,19 @@ section {
 
 /* Responsive */
 @media (max-width: 768px) {
+  .nav-bar{
+    padding: 1.5rem;
+  }
   .nav-links {
     display: none;
     flex-direction: column;
-    background: white;
+    background: #1b5e20;
     position: absolute;
     top: 60px;
+    right: 1rem;
     box-shadow: 0 2px 8px rgba(0,0,0,0.15);
     padding: 1rem;
     z-index: 1000;
-    margin-top: 1rem;
   }
 
   .nav-links.active {
