@@ -54,6 +54,8 @@ a {
   font-size: 1.5rem;
   background: none;
   border: none;
+  color:#000;
+  cursor: pointer;
 }
 
 .nav-links {
@@ -291,8 +293,9 @@ section {
   color: #fff;
 }
 
-.form-message {
+.message {
   margin-top: 1rem;
+  font-weight: bold;
 }
 
 /* Footer section */
@@ -309,11 +312,10 @@ section {
     flex-direction: column;
     background: white;
     position: absolute;
-    right: 1rem;
     top: 60px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.15);
     padding: 1rem;
-    width: 100%;
+    z-index: 1000;
     margin-top: 1rem;
   }
 
@@ -323,7 +325,7 @@ section {
 
   .menu-toggle {
     display: block;
-    background: url('https://fontawesome.com/icons/bars?f=classic&s=solid') no-repeat center;
+    background: #008000;
     cursor: pointer;
     width: 30px;
     height: 30px;

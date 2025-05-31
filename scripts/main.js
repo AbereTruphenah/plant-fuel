@@ -40,13 +40,14 @@ toggles.forEach(toggle => {
   });
 });
 
-// Signup Form Validation
+// Signup form validation
 document.querySelector('#signup-form').addEventListener('submit', (e) => {
   e.preventDefault();
-  const email = e.target.querySelector('input[type="email"]');
+  const emailInput = e.target.querySelector('input[type="email"]');
   const message = e.target.querySelector('.message');
+  const email = emailInput.value.trim();
 
-  if (!email.value.includes('@')) {
+  if (!email || !email.value.includes('@') || !email.includes('.')) {
     message.textContent = 'Please enter a valid email.';
     message.style.color = 'red';
   } else {
